@@ -1,0 +1,53 @@
+package tests;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.TimeUnit;
+
+import libs.ExcelDriver;
+
+import org.apache.log4j.Logger;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import pagesByAnnotation.AlloByAnnotation;
+import pagesByDriver.AlloByDriver;
+
+public class Test_2a {
+	public static WebDriver driver;
+	static AlloByAnnotation allo;
+	static Logger log;
+	
+	@BeforeClass
+	public static void setUp() throws Exception {
+		driver = new FirefoxDriver();
+		allo = new AlloByAnnotation(driver);
+		log = Logger.getLogger(Test_1d.class);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	}
+
+	@Test
+	public void test() throws Exception {
+		allo.homePage.openURL("http://allo.ua/");
+		allo.homePage.clickTabletEbookButton();
+		allo.tabletEBookPage.clickeBookLightLink();
+		allo.ebookLightPage.clickAddCompare1Link();
+		allo.ebookLightPage.clickAddCompare2Link();
+		allo.ebookLightPage.clickAddCompare3Link();
+		allo.ebookLightPage.clickCompareButton();
+		allo.compareGoodsPage.clickBuyButton();
+		allo.orderModalPage.clickOrderButton();
+		allo.orderPage.clicklogoAlloButton();
+		allo.homePage.clickCartButton();	
+	}
+
+	@AfterClass
+	public static void stopTest() {
+		driver.quit();
+	}
+	
+
+}

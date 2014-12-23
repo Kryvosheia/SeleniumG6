@@ -1,0 +1,32 @@
+package pagesByAnnotation;
+
+import java.io.IOException;
+
+import org.apache.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import pagesByDriver.LoginPageByDriver;
+
+
+public class TabletEBookPageByAnnotation {
+	WebDriver driver;
+	Logger log;
+	
+
+	public void TabletEbookPageByAnnotation (WebDriver driver) throws IOException {
+		this.driver = driver;
+		log = Logger.getLogger(TabletEbookPageByAnnotation.class);
+		PageFactory.initElements (driver, this);
+	}
+	
+	@FindBy(xpath=".//a[contains(text(),'Электронные книги с подсветкой')]")
+	WebElement eBookLightLink;
+	
+	public void clickeBookLightLink(){
+		eBookLightLink.click();
+	}
+
+}

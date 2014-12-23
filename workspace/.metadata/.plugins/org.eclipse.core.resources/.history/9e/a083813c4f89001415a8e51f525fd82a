@@ -1,0 +1,97 @@
+###Allo3
+HomePage.logoAlloButton=xpath(".//a[contains(@title,'Интернет-Магазин Allo')]")
+HomePage.feedbackLink=xpath(".//a[contains(@href,'http://allo.ua/offline_stores/index/feedback/')]")
+FeedbackPage.nameTextField=xpath(".//*[contains(@name,'name')]")
+FeedbackPage.emailTextField=xpath(".//*[contains(@name,'email')]")
+FeedbackPage.subjCommentTextField=xpath(".//*[contains(@name,'subj')]")
+FeedbackPage.commentTextField=xpath(".//*[contains(@name,'feedback')]")
+FeedbackPage.submitButton=xpath(".//*[contains(@class,'submit-container')]/*[contains(@class,'button btn-black')]")
+HomePage.logoAlloButton=xpath(".//a[contains(@title,'Интернет-Магазин Allo')]")
+
+###Allo4
+AlloLogo=xpath(".//a[contains(@title,'Интернет-Магазин Allo')]")
+HomePage.tabletEBookButton=xpath(".//*[@class='relative-wrapper']/a[contains(@href,'http://allo.ua/planshety-i-gadzhety/')]")
+TabletEBookPage.eBookLightLink=xpath(".//a[contains(text(),'Электронные книги с подсветкой')]")
+EBookLightPage.addCompare1Link=xpath(".//a[contains(@name,'compare-80325')]")
+EBookLightPage.addCompare2Link=xpath(".//a[contains(@name,'compare-40922')]")
+EBookLightPage.addCompare3Link=xpath(".//a[contains(@name,'compare-52550')]")
+EBookLightPage.compareButton=xpath(".//a[contains(@title,'Сравнить')]/span[contains(text(),'Сравнить')]")
+CompareGoodsPage.buyButton=xpath(".//*[contains(@name,'buy-button_52550')]")
+OrderModal.orderButton=xpath(".//a[contains(@class,'button red checkout-link')]/*[contains(text(),'Оформить заказ')]")
+OrderPage.logoAlloButton=xpath(".//*[(@class='logo')]/*[contains(@src,'http://i.allo.ua/skin/frontend/enterprise/allo/images/logo.png')]")
+HomePage.cartButton=xpath(".//span[(@id='cartHeader')]")
+
+###Allo6
+HomePage.registrationLink=xpath(".//*[contains(text(),'Регистрация')]")
+RegistrationPage.nameTextField=xpath(".//*[(@id='firstname')]")
+RegistrationPage.emailTextField=xpath(".//*[(@id='email_address')]")
+RegistrationPage.passwordTextField=xpath(".//*[(@id='password')]")
+RegistrationPage.userAgreementCheckBox=xpath(".//*[(@id='tosCheckbox')]")
+RegistrationPage.continueRegistrationButton=xpath(".//*[(@class='button btn-yellow next')]")
+
+###Allo7
+HomePage.LogInLink=xpath(".//*[(@id='first')]")
+LogInPage.emailTextField=xpath(".//*[(@id='email')]")
+LogInPage.passwordTextField=xpath(".//*[(@id='pass')]")
+LogInPage.loginButton=xpath(".//*[(@id='send2')]")
+
+
+
+CabinetPage.personalCabinetLink=xpath(".//a[(@title='В личный кабинет')]")
+
+HomePage.logoAllo = xpath(".//a[contains(@title,"Интернет-Магазин Allo")]")
+HomePage.titleMarket = xpath(".//*[@class="main col2-left-layout"]/h1[contains(text(),'Интернет-магазин Allo')]")
+HomePage.headerLinkBlog = xpath(".//a[contains(text(),"Блог")]")
+HomePage.menuPhotoVideo = xpath(".//span[contains(text(),'Фото- и видеосъемка, GPS')]")
+HomePage.menuPhotoVideoCameras = xpath(".//a[@class='level1'][contains(text(),'Фотоаппараты')]")
+HomePage.searchField = xpath(".//*[@id='search']")
+HomePage.searchButton = xpath(".//*[@class='button_container']/button[@title='Найти']")
+HomePage.loginLink = xpath(".//*[@id='first'][contains(text(),'Войти')]")
+HomePage.signedUpMessage = xpath(".//*[@id='list-of-messages']/li/span[contains(text(),'Пользователь с таким email уже зарегистрирован.')]")
+
+ProductPage.categoryTitle = xpath(".//*[@id='category-title']")
+ProductPage.sortByDropdown = xpath(".//*[@class='toolbar-top']/*/*/*/*/*/span[@class='line']")
+ProductPage.itemFromHighToLow = xpath(".//*[@class='toolbar-top']/*/*/*/*/*/ul[@class='sort-list']/li[2]/a")
+ProductPage.currentSortFromHighToLow = xpath(".//*[@class="current-sort"]/span[contains(text(),'от дорогих к дешевым')]")
+ProductPage.filterDiscount = xpath(".//span[contains(text(),'Акционные предложения')]")
+ProductPage.checkboxDiscount = xpath(".//*[@id='advancednavigation-filter-content-discount']/ol/li/a/input")
+ProductPage.fieldPriceTo = xpath(".//*[@class="from-wrapper"]/label[span[contains(text(),"до")]]/input")
+ProductPage.buttonSubmitPriceFilter = xpath(".//*[@id='price_slider_submit']")
+ProductPage.filterManufacturer = xpath(".//*[@id='advancednavigation-filter-content-brand_foto']/ol/li/a/span[contains(text(),'Nikon')]")
+ProductPage.checkboxManufacturer = xpath(".//li/a[@href='http://allo.ua/ru/products/videocameras/proizvoditel-nikon/']/input[@type='checkbox']")
+ProductPage.filterSensorDisplay = xpath(".//span[@class='filter-name'][contains(text(),'Сенсорный дисплей')]")
+ProductPage.filterSensorDisplayIsPresent = xpath(".//*[@id='advancednavigation-filter-content-sensornyj_displej_foto']/*/*/a/span[contains(text(),"Есть")]")
+ProductPage.filterReset = xpath(".//li[1]/a[@title='Сбросить фильтр']/span")
+ProductPage.buttonResetAllFilters = xpath(".//button[@class='btn-yellow button']")"]
+ProductPage.buttonBuyAvailable = xpath(".//li[contains(.,'Товар есть в наличии')][1]/*/*/*/button")
+ProductPage.cartLightbox = xpath(".//*[@class="lightbox cart-lightbox"][1]")
+ProductPage.buttonToCheckout = xpath(".//*[@id='button-checkout-popup']/span")
+
+
+BlogPage.linkSurvey = xpath(".//*[@id="menu-item-8"]/a[contains(text(),"Обзоры и сравнения")]")
+BlogPage.linkPhones = xpath(".//*[@id="menu-item-15"]/a[contains(text(),'Телефоны и смартфоны')]")
+BlogPage.titlePhones = xpath(".//span[contains(text(),'Телефоны и смартфоны')]")
+BlogPage.linkItemToSelect = xpath(".//*[@class="tab most-popular"]/ul/li[3]/*[@class="info"]/a")
+BlogPage.buttonGoToMarket = xpath(".//li[@class='product'][contains(.,'Товар есть в наличии')]/a[@class='button']")
+
+ProductDescriptionPage.buttonBuy = xpath(".//button[contains(@id,'buy-button-big')]")
+ProductDescriptionPage.checkboxCrossales = xpath(".//ul[@class='crossales']/li[@class='item'][1]/input")
+ProductDescriptionPage.buttonCheckout = xpath(".//*[@id='button-checkout-popup']/span")
+
+CheckoutPage.pageTitle = xpath(".//h1[@class="page-title"][contains(text(),'Оформить заказ')]")
+CheckoutPage.loginTab = xpath(".//*[@id='login_tab']/a")
+CheckoutPage.fieldEmail = xpath(".//*[@id='email']")
+CheckoutPage.fieldPassword = xpath(".//*[@id='pass']")
+CheckoutPage.sendButton = xpath(".//*[@id='send2']")
+CheckoutPage.fieldPhone = xpath(".//*[@id='address_telephone_number']")
+CheckoutPage.fieldCity = xpath(".//*[@id='address_city']")
+CheckoutPage.containerDelivery = xpath(".//*[@id='shipping_methods_container']")
+CheckoutPage.labelDelivery = xpath(".//*[@id='shipping_methods_container']/*/*/a/span[@class="label"]")
+CheckoutPage.fieldDelivery = xpath(".//li[contains(text(),'Курьерская доставка')]")
+CheckoutPage.removeProduct = xpath(".//a[contains(text(),'Remove')]")
+CheckoutPage.emptyCartLabel = xpath(".//h1[contains(text(),'Корзина пуста')]")
+
+
+
+
+
